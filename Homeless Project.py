@@ -137,3 +137,8 @@ df_population1
 
 # drop first row [0] of df_population
 df_population1.drop([0])
+
+# In[16]:
+
+# drop 'rescen42010' column from df_population
+df_population1.drop('rescen42010', axis=1, inplace=True)
