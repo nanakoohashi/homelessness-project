@@ -142,3 +142,8 @@ df_population1.drop([0])
 
 # drop 'rescen42010' column from df_population
 df_population1.drop('rescen42010', axis=1, inplace=True)
+
+# In[17]:
+
+# drop 'resbase42010' from df_population
+df_population1.drop('resbase42010', axis=1, inplace=True)
