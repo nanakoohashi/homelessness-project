@@ -112,7 +112,7 @@ df_population1
 
 
 # drop first row [0] of df_population
-df_population1.drop([0])
+df_population1.drop([0], inplace=True)
 
 
 
