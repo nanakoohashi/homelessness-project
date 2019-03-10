@@ -148,3 +148,8 @@ df_population1.drop('rescen42010', axis=1, inplace=True)
 
 # drop 'resbase42010' from df_population
 df_population1.drop('resbase42010', axis=1, inplace=True)
+
+# In[18]:
+
+# drop 'GEO.id' from df_population
+df_population1.drop('GEO.id', axis=1, inplace=True)
