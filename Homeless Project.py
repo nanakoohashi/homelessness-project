@@ -60,6 +60,15 @@ df_homeless1 = df_homeless[df_homeless.Measures == 'Total Homeless']
 df_homeless1
 
 
+# In[66]:
+
+
+# drop 'CoC Number' from df_homeless
+df_homeless1.drop('CoC Number', axis=1, inplace=True)
+df_homeless1
+
+
+# 
 # ### df_population
 
 # #### Define
