@@ -43,6 +43,7 @@ df_population.info()
 
 # - States are abbreviated for df_homeless but are in full in population.
 # - Fix year column in df_homeless to fit YYYY format.
+# - Data organized by cities/counties in df_homeless.
 # - Change 'Geography' to 'State' for df_population.
 # - Rename columns for df_population for better clarity.
 # - Delete 0 index row for df_population.
@@ -65,6 +66,11 @@ df_homeless1 = df_homeless[df_homeless.Measures == 'Total Homeless']
 # drop 'CoC Number' from df_homeless
 df_homeless1.drop('CoC Number', axis=1, inplace=True)
 
+
+# # For completion on 03/12
+# - reformat Year column 
+# - rename State column values
+# - sum Total homeless by state
 
 # In[9]:
 
