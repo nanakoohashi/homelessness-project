@@ -44,6 +44,7 @@ df_population.info()
 # - States are abbreviated for df_homeless but are in full in population.
 # - Fix year column in df_homeless to fit YYYY format.
 # - Data organized by cities/counties in df_homeless.
+# - Multiple Measures for each state in df_homeless.
 # - Change 'Geography' to 'State' for df_population.
 # - Rename columns for df_population for better clarity.
 # - Delete 0 index row for df_population.
@@ -186,10 +187,3 @@ df_population1.drop('GEO.id', axis=1, inplace=True)
 # drop first 'GEO.id2' from df_population
 df_population1.drop('GEO.id2', axis=1, inplace=True)
 df_population1
-
-
-# In[ ]:
-
-
-
-
