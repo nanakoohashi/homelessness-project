@@ -1,41 +1,41 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[59]:
+# In[1]:
 
 
 import pandas as pd
 import zipfile
 
 
-# In[60]:
+# In[2]:
 
 
 with zipfile.ZipFile('homelessness.zip', 'r') as myzip:
     myzip.extractall()
 
 
-# In[61]:
+# In[3]:
 
 
 df_homeless = pd.read_csv('2007-2016-Homelessnewss-USA.csv')
 df_homeless
 
 
-# In[62]:
+# In[4]:
 
 
 df_homeless.info()
 
 
-# In[63]:
+# In[5]:
 
 
 df_population = pd.read_csv('Population-by-state.csv')
 df_population.head()
 
 
-# In[64]:
+# In[6]:
 
 
 df_population.info()
@@ -53,19 +53,26 @@ df_population.info()
 
 # - keep all rows with Measures == Total Homeless
 
-# In[65]:
+# In[7]:
 
 
 df_homeless1 = df_homeless[df_homeless.Measures == 'Total Homeless']
-df_homeless1
 
 
-# In[66]:
+# In[8]:
 
 
 # drop 'CoC Number' from df_homeless
 df_homeless1.drop('CoC Number', axis=1, inplace=True)
-df_homeless1
+
+
+# In[9]:
+
+
+# Use only year values for the Year column.
+
+df_homeless1['Year'] = df_homeless1['Year'].str[4:]
+
 
 
 # 
@@ -73,42 +80,42 @@ df_homeless1
 
 # #### Define
 
-# In[67]:
+# In[11]:
 
 
 df_population1 = df_population.rename(columns={'GEO.display-label': 'State', 'respop72010': 'Population_2010', 'respop72011': 'Population_2011', 'respop72012': 'Population_2012', 'respop72013': 'Population_2013', 'respop72014': 'Population_2014', 'respop72015': 'Population_2015', 'respop72016': 'Population_2016'})
 df_population1
 
 
-# In[68]:
+# In[12]:
 
 
 # drop first row [0] of df_population
 df_population1.drop([0], inplace=True)
 
 
-# In[69]:
+# In[13]:
 
 
 # drop first 'rescen42010' from df_population
 df_population1.drop('rescen42010', axis=1, inplace=True)
 
 
-# In[70]:
+# In[14]:
 
 
 # drop first 'resbase42010' from df_population
 df_population1.drop('resbase42010', axis=1, inplace=True)
 
 
-# In[71]:
+# In[15]:
 
 
 # drop first 'GEO.id' from df_population
 df_population1.drop('GEO.id', axis=1, inplace=True)
 
 
-# In[72]:
+# In[16]:
 
 
 # drop first 'GEO.id2' from df_population
