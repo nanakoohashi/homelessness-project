@@ -174,6 +174,12 @@ df_homeless2.shape
 df_homeless2.drop('CoC Name', axis=1, inplace=True)
 
 
+# In[44]:
+
+
+df_homeless2.drop('Measures', axis=1, inplace=True)
+
+
 # 
 # ### df_population
 
