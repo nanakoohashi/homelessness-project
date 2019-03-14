@@ -1,41 +1,41 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[22]:
 
 
 import pandas as pd
 import zipfile
 
 
-# In[3]:
+# In[23]:
 
 
 with zipfile.ZipFile('homelessness.zip', 'r') as myzip:
     myzip.extractall()
 
 
-# In[4]:
+# In[24]:
 
 
 df_homeless = pd.read_csv('2007-2016-Homelessnewss-USA.csv')
 df_homeless
 
 
-# In[5]:
+# In[25]:
 
 
 df_homeless.info()
 
 
-# In[6]:
+# In[26]:
 
 
 df_population = pd.read_csv('Population-by-state.csv')
 df_population.head()
 
 
-# In[7]:
+# In[27]:
 
 
 df_population.info()
@@ -45,7 +45,6 @@ df_population.info()
 # - Fix year column in df_homeless to fit YYYY format.
 # - Data organized by cities/counties in df_homeless.
 # - Multiple Measures for each state in df_homeless.
-# - Convert Count values from str to int in df_homeless.
 # - Change 'Geography' to 'State' for df_population.
 # - Rename columns for df_population for better clarity.
 # - Delete 0 index row for df_population.
@@ -56,20 +55,20 @@ df_population.info()
 
 # - keep all rows with Measures == Total Homeless
 
-# In[8]:
+# In[28]:
 
 
 df_homeless1 = df_homeless[df_homeless.Measures == 'Total Homeless']
 
 
-# In[9]:
+# In[29]:
 
 
 # drop 'CoC Number' from df_homeless
 df_homeless1.drop('CoC Number', axis=1, inplace=True)
 
 
-# In[10]:
+# In[30]:
 
 
 # Use only year values for the Year column.
@@ -77,7 +76,7 @@ df_homeless1.drop('CoC Number', axis=1, inplace=True)
 df_homeless1['Year'] = df_homeless1['Year'].str[4:]
 
 
-# In[11]:
+# In[31]:
 
 
 # Rename State column values
@@ -139,28 +138,40 @@ df_homeless2= df_homeless1.replace({'State' : {
 df_homeless2
 
 
-# In[18]:
+# In[32]:
 
 
 df_homeless2.drop(df_homeless2[df_homeless2.State == "VI"].index, inplace=True)
 
 
-# In[19]:
+# In[33]:
 
 
 df_homeless2.drop(df_homeless2[df_homeless2.State == "GU"].index, inplace=True)
 
 
-# In[20]:
+# In[34]:
 
 
 df_homeless2.State.unique()
 
 
-# In[21]:
+# In[35]:
 
 
 df_homeless2.reset_index(drop=True)
+
+
+# In[41]:
+
+
+df_homeless2.shape
+
+
+# In[42]:
+
+
+df_homeless2.drop('CoC Name', axis=1, inplace=True)
 
 
 # 
@@ -168,42 +179,42 @@ df_homeless2.reset_index(drop=True)
 
 # #### Define
 
-# In[24]:
+# In[ ]:
 
 
 df_population1 = df_population.rename(columns={'GEO.display-label': 'State', 'respop72010': '2010', 'respop72011': '2011', 'respop72012': '2012', 'respop72013': '2013', 'respop72014': '2014', 'respop72015': '2015', 'respop72016': '2016'})
 df_population1
 
 
-# In[13]:
+# In[ ]:
 
 
 # drop first row [0] of df_population
 df_population1.drop([0], inplace=True)
 
 
-# In[14]:
+# In[ ]:
 
 
 # drop first 'rescen42010' from df_population
 df_population1.drop('rescen42010', axis=1, inplace=True)
 
 
-# In[15]:
+# In[ ]:
 
 
 # drop first 'resbase42010' from df_population
 df_population1.drop('resbase42010', axis=1, inplace=True)
 
 
-# In[16]:
+# In[ ]:
 
 
 # drop first 'GEO.id' from df_population
 df_population1.drop('GEO.id', axis=1, inplace=True)
 
 
-# In[17]:
+# In[ ]:
 
 
 # drop first 'GEO.id2' from df_population
@@ -212,3 +223,7 @@ df_population1
 
 
 # In[ ]:
+
+
+
+
