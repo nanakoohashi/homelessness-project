@@ -180,6 +180,12 @@ df_homeless2.drop('CoC Name', axis=1, inplace=True)
 df_homeless2.drop('Measures', axis=1, inplace=True)
 
 
+# In[49]:
+
+
+df_homeless2['Count'] = df_homeless2['Count'].str.replace(',', '')
+
+
 # 
 # ### df_population
 
