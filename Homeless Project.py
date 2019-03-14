@@ -45,6 +45,7 @@ df_population.info()
 # - Fix year column in df_homeless to fit YYYY format.
 # - Data organized by cities/counties in df_homeless.
 # - Multiple Measures for each state in df_homeless.
+# - Convert Count values from str to int in df_homeless.
 # - Change 'Geography' to 'State' for df_population.
 # - Rename columns for df_population for better clarity.
 # - Delete 0 index row for df_population.
