@@ -22,6 +22,7 @@ df_homeless = pd.read_csv('2007-2016-Homelessnewss-USA.csv')
 df_homeless
 
 
+# ## Clean
 # In[25]:
 
 
