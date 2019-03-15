@@ -185,11 +185,20 @@ df_homeless2.drop('Measures', axis=1, inplace=True)
 
 df_homeless2['Count'] = df_homeless2['Count'].str.replace(',', '')
 
+
 # In[50]:
+
 
 df_homeless2['Count'] = pd.to_numeric(df_homeless2['Count'])
 
-# 
+
+# In[51]:
+
+d = {'Count': 'sum'}
+df_homeless3 = df_homeless2.groupby(['Year', 'State']).aggregate(d)
+df_homeless3
+
+
 # ### df_population
 
 # #### Define
