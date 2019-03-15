@@ -185,6 +185,9 @@ df_homeless2.drop('Measures', axis=1, inplace=True)
 
 df_homeless2['Count'] = df_homeless2['Count'].str.replace(',', '')
 
+# In[50]:
+
+df_homeless2['Count'] = pd.to_numeric(df_homeless2['Count'])
 
 # 
 # ### df_population
