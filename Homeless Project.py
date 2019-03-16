@@ -264,6 +264,8 @@ df_population1
 
 # In[ ]:
 
-
+# Make the state column the index
+df_population1.set_index("State", inplace = True)
+df_population1
 
 
