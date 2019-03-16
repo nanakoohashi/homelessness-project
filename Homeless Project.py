@@ -196,13 +196,23 @@ df_homeless2['Count'] = pd.to_numeric(df_homeless2['Count'])
 
 # In[51]:
 
+
 d = {'Count': 'sum'}
 df_homeless3 = df_homeless2.groupby(['Year', 'State']).aggregate(d)
 df_homeless3
 
+
 # In[52]:
 
+
 df_homeless4 = pd.pivot_table(df_homeless3, values='Count', index=['State'], columns=['Year'], aggfunc=np.sum)
+df_homeless4
+
+
+# In[53]:
+
+
+df_homeless4.drop(['2007', '2008', '2009'], axis=1, inplace=True)
 df_homeless4
 
 # ### df_population
