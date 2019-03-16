@@ -200,6 +200,10 @@ d = {'Count': 'sum'}
 df_homeless3 = df_homeless2.groupby(['Year', 'State']).aggregate(d)
 df_homeless3
 
+# In[52]:
+
+df_homeless4 = pd.pivot_table(df_homeless3, values='Count', index=['State'], columns=['Year'], aggfunc=np.sum)
+df_homeless4
 
 # ### df_population
 
