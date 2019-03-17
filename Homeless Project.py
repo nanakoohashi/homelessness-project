@@ -264,8 +264,14 @@ df_population1
 
 # In[ ]:
 
+
 # Make the state column the index
 df_population1.set_index("State", inplace = True)
 df_population1
 
 
+# In[ ]:
+
+
+#Convert to int
+df_population2 = df_population1.apply(pd.to_numeric)
