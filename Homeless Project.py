@@ -280,3 +280,8 @@ df_population2 = df_population1.apply(pd.to_numeric)
 # In[ ]:
 
 df_homeless4.info()
+
+
+# In[ ]:
+
+df_population2.info()
