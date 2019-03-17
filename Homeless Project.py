@@ -285,3 +285,10 @@ df_homeless4.info()
 # In[ ]:
 
 df_population2.info()
+
+
+# In[ ]:
+
+#calculate percentage homeless by state and year
+df_combined = df_homeless4/df_population2
+df_combined
