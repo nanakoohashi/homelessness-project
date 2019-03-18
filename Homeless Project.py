@@ -294,11 +294,14 @@ df_combined = df_homeless4/df_population2
 df_combined
 
 
+
 # In[ ]:
 
 #transpose df_combined
 df_combined = df_combined.T
 df_combined
+
+
 
 # In[ ]:
 
@@ -309,3 +312,10 @@ ax = plt.gca()
 ax.set_title("Percentage of State Homelessness per Year")
 plt.xlabel("Year")
 plt.ylabel("Percentage Homeless")
+
+
+# In[ ]:
+
+#Difference in percentage homeless from 2010 to 2016
+df_combined.loc['Diff'] = df_combined.loc['2016'] - df_combined.loc['2010']
+df_combined.loc['Diff'].sort_values()
