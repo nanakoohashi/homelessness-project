@@ -292,3 +292,10 @@ df_population2.info()
 #calculate percentage homeless by state and year
 df_combined = df_homeless4/df_population2
 df_combined
+
+
+# In[ ]:
+
+#transpose df_combined
+df_combined = df_combined.T
+df_combined
