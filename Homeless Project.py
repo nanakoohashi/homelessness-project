@@ -299,3 +299,13 @@ df_combined
 #transpose df_combined
 df_combined = df_combined.T
 df_combined
+
+# In[ ]:
+
+#graph df_combined
+df_melt = df_combined.reset_index().melt('Year', var_name='cols', value_name='vals')
+g = sns.factorplot(x='Year', y='vals', hue='cols', size=20, data=df_melt)
+ax = plt.gca()
+ax.set_title("Percentage of State Homelessness per Year")
+plt.xlabel("Year")
+plt.ylabel("Percentage Homeless")
