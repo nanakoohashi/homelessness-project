@@ -168,7 +168,7 @@ df_homeless2.State.unique()
 
 # In[35]:
 
-
+# reset index
 df_homeless2.reset_index(drop=True)
 
 
