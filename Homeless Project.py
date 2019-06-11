@@ -64,8 +64,6 @@ df_population.info()
 df_homeless1 = df_homeless.copy()
 
 
-# - keep all rows with Measures == Total Homeless
-
 
 # In[28]:
 
