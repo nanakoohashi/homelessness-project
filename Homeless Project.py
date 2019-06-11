@@ -162,7 +162,7 @@ df_homeless2.drop(df_homeless2[df_homeless2.State == "GU"].index, inplace=True)
 
 # In[34]:
 
-
+# find all unique entries in State column
 df_homeless2.State.unique()
 
 
