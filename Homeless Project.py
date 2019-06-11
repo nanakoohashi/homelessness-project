@@ -174,7 +174,7 @@ df_homeless2.reset_index(drop=True)
 
 # In[41]:
 
-
+# ensure that unwanted entries have been removed
 df_homeless2.shape
 
 
