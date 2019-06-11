@@ -55,7 +55,17 @@ df_population.info()
 # ## Clean
 # ### df_homeless
 
+# - make copy of data set
+
+
+# In[]:
+
+
+df_homeless1 = df_homeless.copy()
+
+
 # - keep all rows with Measures == Total Homeless
+
 
 # In[28]:
 
