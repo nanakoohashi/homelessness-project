@@ -156,7 +156,7 @@ df_homeless2.drop(df_homeless2[df_homeless2.State == "VI"].index, inplace=True)
 
 # In[33]:
 
-
+# drop "GU" entries in State column
 df_homeless2.drop(df_homeless2[df_homeless2.State == "GU"].index, inplace=True)
 
 
