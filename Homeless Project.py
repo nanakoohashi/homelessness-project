@@ -180,7 +180,7 @@ df_homeless2.shape
 
 # In[42]:
 
-
+# drop CoC Name column
 df_homeless2.drop('CoC Name', axis=1, inplace=True)
 
 
