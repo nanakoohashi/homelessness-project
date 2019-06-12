@@ -192,7 +192,7 @@ df_homeless2.drop('Measures', axis=1, inplace=True)
 
 # In[49]:
 
-
+# remove commas from Count column
 df_homeless2['Count'] = df_homeless2['Count'].str.replace(',', '')
 
 
