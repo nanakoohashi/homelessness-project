@@ -198,7 +198,7 @@ df_homeless2['Count'] = df_homeless2['Count'].str.replace(',', '')
 
 # In[50]:
 
-
+# convert all entries in Count column from string to integer
 df_homeless2['Count'] = pd.to_numeric(df_homeless2['Count'])
 
 
