@@ -186,7 +186,7 @@ df_homeless2.drop('CoC Name', axis=1, inplace=True)
 
 # In[44]:
 
-
+# drop Measures column
 df_homeless2.drop('Measures', axis=1, inplace=True)
 
 
