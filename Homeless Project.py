@@ -212,7 +212,7 @@ df_homeless3
 
 # In[52]:
 
-
+# pivot table
 df_homeless4 = pd.pivot_table(df_homeless3, values='Count', index=['State'], columns=['Year'], aggfunc=np.sum)
 df_homeless4
 
