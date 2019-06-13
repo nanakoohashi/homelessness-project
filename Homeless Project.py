@@ -219,7 +219,7 @@ df_homeless4
 
 # In[53]:
 
-
+# drop columns due df_population data set 
 df_homeless4.drop(['2007', '2008', '2009'], axis=1, inplace=True)
 df_homeless4
 
