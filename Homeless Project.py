@@ -204,7 +204,7 @@ df_homeless2['Count'] = pd.to_numeric(df_homeless2['Count'])
 
 # In[51]:
 
-
+# sum Count by state and year
 d = {'Count': 'sum'}
 df_homeless3 = df_homeless2.groupby(['Year', 'State']).aggregate(d)
 df_homeless3
