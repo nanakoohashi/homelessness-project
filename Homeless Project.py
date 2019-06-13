@@ -229,7 +229,7 @@ df_homeless4
 
 # In[ ]:
 
-
+# rename columns
 df_population1 = df_population.rename(columns={'GEO.display-label': 'State', 'respop72010': '2010', 'respop72011': '2011', 'respop72012': '2012', 'respop72013': '2013', 'respop72014': '2014', 'respop72015': '2015', 'respop72016': '2016'})
 df_population1
 
