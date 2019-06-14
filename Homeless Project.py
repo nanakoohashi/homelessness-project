@@ -287,6 +287,7 @@ df_population2 = df_population1.apply(pd.to_numeric)
 
 # In[ ]:
 
+# Check info for df_homeless
 df_homeless4.info()
 
 
