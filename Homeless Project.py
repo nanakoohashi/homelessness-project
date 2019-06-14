@@ -293,6 +293,7 @@ df_homeless4.info()
 
 # In[ ]:
 
+# Check info for df_population
 df_population2.info()
 
 
