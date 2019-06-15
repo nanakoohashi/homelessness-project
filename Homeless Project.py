@@ -304,7 +304,7 @@ df_combined = df_homeless4/df_population2
 df_combined
 
 
-
+# #### Visualize
 # In[ ]:
 
 #transpose df_combined
