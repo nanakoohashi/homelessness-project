@@ -305,12 +305,6 @@ df_combined
 
 
 # #### Visualize
-# In[ ]:
-
-#transpose df_combined
-df_combined = df_combined.T
-df_combined
-
 
 
 # In[ ]:
