@@ -306,6 +306,12 @@ df_combined
 
 # #### Visualize
 
+# In[ ]:
+
+# Transpose df_percentage_homeless
+df_percentage_homeless = df_percentage_homeless.T
+df_percentage_homeless
+
 
 # In[ ]:
 
