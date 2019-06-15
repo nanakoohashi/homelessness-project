@@ -316,6 +316,12 @@ df_combined.loc['Diff'].sort_values()
 
 # In[ ]:
 
+# Write object to a comma-separated values (csv) file.
+diff_homeless_percent.to_csv('diff_homeless.csv')
+
+
+# In[ ]:
+
 #Import Tableau Dashboard to Jupyter Notebooks (Change in Homelessness from 2010-2016)
 %%HTML
 
