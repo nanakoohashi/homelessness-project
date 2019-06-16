@@ -328,6 +328,15 @@ diff_homeless_percent.to_csv('diff_homeless.csv')
 
 ### United States Change in Homeless Population from 2010 to 2016
 
+
+# In[ ]:
+
+# convert to data set
+df_percentage_homeless.loc['Diff'] = df_percentage_homeless.loc['2016'] - df_percentage_homeless.loc['2010']
+diff_homeless_percent = df_percentage_homeless.loc['Diff'].sort_values()
+diff_homeless_percent
+
+
 # In[ ]:
 
 #Import Tableau Dashboard to Jupyter Notebooks (Change in Homelessness from 2010-2016)
