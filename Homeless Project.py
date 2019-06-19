@@ -178,16 +178,16 @@ df_homeless2.reset_index(drop=True)
 df_homeless2.shape
 
 
-# In[ ]
-
-# make copy of df_homeless2
-df_homeless_measures = df_homeless2.copy()
-
-
 # In[42]:
 
 # drop CoC Name column
 df_homeless2.drop('CoC Name', axis=1, inplace=True)
+
+
+# In[ ]
+
+# make copy of df_homeless2
+df_homeless_measures = df_homeless2.copy()
 
 
 # In[44]:
