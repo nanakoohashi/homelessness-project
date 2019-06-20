@@ -310,6 +310,15 @@ df_percentage_homeless = df_homeless4/df_population2
 df_percentage_homeless
 
 
+#### df_homeless_measures 
+
+
+# In[ ]:
+
+# remove commas from Count column
+df_homeless_measures['Count'] = df_homeless_measures['Count'].str.replace(',', '')
+
+
 # #### Visualize
 
 # In[ ]:
