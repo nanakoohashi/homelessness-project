@@ -325,6 +325,14 @@ df_homeless_measures['Count'] = df_homeless_measures['Count'].str.replace(',', '
 df_homeless_measures['Count'] = pd.to_numeric(df_homeless_measures['Count'])
 
 
+# In[ ]:
+
+# sum Count by state, year, and measures
+d = {'Count': 'sum'}
+df_homeless_measures1 = df_homeless_measures.groupby(['Year', 'State', 'Measures']).aggregate(d)
+df_homeless_measures1
+
+
 # #### Visualize
 
 # In[ ]:
