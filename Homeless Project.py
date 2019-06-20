@@ -333,6 +333,12 @@ df_homeless_measures1 = df_homeless_measures.groupby(['Year', 'State', 'Measures
 df_homeless_measures1
 
 
+# In[ ]:
+
+# Write object to a comma-separated values (csv) file.
+df_homeless_measures1.to_csv('diff_homeless_measures.csv')
+
+
 # #### Visualize
 
 # In[ ]:
