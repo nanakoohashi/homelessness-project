@@ -319,6 +319,12 @@ df_percentage_homeless
 df_homeless_measures['Count'] = df_homeless_measures['Count'].str.replace(',', '')
 
 
+# In[ ]:
+
+# convert all entries in Count column from string to integer
+df_homeless_measures['Count'] = pd.to_numeric(df_homeless_measures['Count'])
+
+
 # #### Visualize
 
 # In[ ]:
