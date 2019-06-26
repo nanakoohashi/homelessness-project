@@ -27,3 +27,19 @@ I fixed the issues I found while assessing the data, merged the two data sets, a
 ### 4. Visualize
 I used Tableau to visualize the data from the cleaned data sets.
 
+## Results
+### 1. Change in Homelessness from 2010 to 2016
+- 26 states have decreased the percentage of homeless people in their state.
+- 26 states have increased the percentage of homeless people in their state.
+
+### 2. Percent of State Population Homeless in 2016
+- No state have a homeless population of over 7% of their total population in 2016.
+- The District of Columbia had over double the rate of homelessness than any other state in this study in 2016.
+- Mississippi had the lowest rate of homelessness out of all the states in 2016.
+
+### 3. Breakdown of Homelessness
+- Sheltered homeless and homeless individuals make up the highest portion of the homeless population nationwide on average between 2007 to 2016.
+- Youth homelessness make up the lowest portion of the homeless population nationwide on average between 2007 to 2016.
+
+### 4. Changes in Homelessness Over the Years
+- Total homelessness has decreased in the country from 2007 to 2016.
