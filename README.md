@@ -5,8 +5,9 @@ This dataset reports the national estimates of homelessness by state from 2007 -
 
 ## Getting Started
 ### Dependencies
-Windows 10
-Python 3
+- Windows 10
+- Python 3
+- Tableau 2019.2
 
 ### Libraries
 - pandas
