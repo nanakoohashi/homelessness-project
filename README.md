@@ -32,6 +32,7 @@ I used Tableau to visualize the data from the cleaned data sets.
 ## Results
 ### Visualizations
 I created dashboards using Tableau which can be seen by clicking on the links below:
+- [United States Change in Homeless Population (2010-2016)](https://public.tableau.com/shared/TMFGJHCTC?:display_count=yes&:origin=viz_share_link)
 
 ### 1. Change in Homelessness from 2010 to 2016
 - 26 states have decreased the percentage of homeless people in their state.
