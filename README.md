@@ -30,6 +30,9 @@ I fixed the issues I found while assessing the data, merged the two data sets, a
 I used Tableau to visualize the data from the cleaned data sets.
 
 ## Results
+### Visualizations
+I created dashboards using Tableau which can be seen by clicking on the links below:
+
 ### 1. Change in Homelessness from 2010 to 2016
 - 26 states have decreased the percentage of homeless people in their state.
 - 26 states have increased the percentage of homeless people in their state.
